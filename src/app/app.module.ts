@@ -24,7 +24,7 @@ import { CreatePassengerComponent } from './create-passenger/create-passenger.co
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
