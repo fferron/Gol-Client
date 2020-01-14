@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div *ngIf="airplane">
+            <div>
+                <label>ID: </label> {{airplane.id}}
+            </div>
+            <div>
+                <label>Quantidade de Passageiros: </label> {{airplane.numberOfPassengers}}
+            </div>
+            <div>
+                    <label>Modelo: </label> {{airplane.airplaneModel}}
+                </div>
+            <div>
+                <label>Data de Criação: </label> {{airplane.registryCreationDate | date: 'dd/MM/yyyy'}}
+            </div>
+            <hr />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        <table id="list" class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Cód Aeronave (ID)</th>
+                    <th>Data de Criação</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let passenger of passengers | async">
+                    <td>{{passenger.id}}</td>
+                    <td>{{passenger.name}}</td>
+                    <td>{{passenger.airplaneID}}</td>
+                    <td>{{passenger.registryCreationDate | date: 'dd/MM/yyyy'}}</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm icon-btn" (click)="edit(passenger)"><i
+                                class="fa fa-pencil"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
